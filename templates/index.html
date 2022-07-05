@@ -1,0 +1,648 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <main>
+    <section class="intro">
+      <header>
+        <div class="header__inner">
+          <div class="inner1 contentCenter">
+            <div class="flexCenter">
+              <div class="logoDiv">
+                <div class="logo"><a href="/"><img class="logoImage" src="{% static 'media/fmxLogo.png' %}" alt="Logo"></a></div>
+              </div>
+              <p class="companyInfo">Осуществляет техническое обслуживание и ремонт самолетов</p>
+            </div>  
+            <div class="flexCenter headerContact">
+              <div class="headerPhoneDiv">
+                <a class="flexCenter headerPhone" href="tel:+998889003009">
+                  <svg viewBox="0 0 22 22" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.387 1.725C17.192 1.725 20.276 4.809 20.276 8.614M13.387 5.265C15.236 5.265 16.736 6.764 16.736 8.614M8.60598 13.365C9.50598 14.228 10.561 14.93 11.727 15.428L12.246 15.649L13.841 14.029C14.237 13.627 14.81 13.453 15.363 13.569L19.227 14.378C19.881 14.517 20.348 15.094 20.348 15.762V18.544C20.348 19.539 19.542 20.345 18.547 20.345H17.692C13.758 20.345 9.87598 19.042 6.93998 16.424C6.69798 16.209 6.46298 15.986 6.23398 15.758L6.27098 15.795C6.04198 15.566 5.81998 15.331 5.60498 15.089C2.98598 12.154 1.68298 8.272 1.68298 4.338V3.483C1.68298 2.488 2.48898 1.682 3.48398 1.682H6.26598C6.93398 1.682 7.51098 2.149 7.64998 2.803L8.45998 6.667C8.57498 7.219 8.40198 7.793 7.99998 8.189L6.37998 9.784L6.60098 10.303C7.09898 11.468 7.74198 12.465 8.60598 13.365Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <p>+998 88 900-3-009</p>  
+                </a>
+              </div>
+              <div class="contactUs">
+                <a href="#" class="buttonWhite">Связаться с нами</a>
+              </div>
+            </div>
+          </div>  
+          <div class="hr"></div>
+          <div class="inner2 contentCenter">
+            <nav class="nav">
+              <div class="navLink relative">
+                <a class="active" href="/">Главная</a>
+              </div>  
+              <div class="navLink relative projectLinkDiv">
+                <a href="/projects" class="flexCenter projectLink arrowLink">
+                  <span>Проекты</span>
+                  <svg class="projectSVG" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.8248 1.08749L6.00304 5.90999L1.18054 1.08749" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>  
+                </a> 
+                <div class="dropDownProjects">
+                  <div class="dropDownContent">
+                    <p>Project 1</p>
+                    <p>Project 2</p>
+                  </div>
+                </div> 
+              </div>  
+              <div class="navLink relative serviceLinkDiv">
+                <a href="/services" class="flexCenter serviceLink arrowLink">
+                  <span>Сервисы</span>
+                  <svg class="serviceSVG" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.8248 1.08749L6.00304 5.90999L1.18054 1.08749" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>  
+                </a> 
+                <div class="dropDownService">
+                  <div class="dropDownContent">
+                    <p>Service 1</p>
+                    <p>Service 2</p>
+                  </div>
+                </div> 
+              </div>  
+              <div class="navLink relative">
+                <a href="/about">О нас</a>
+              </div>  
+              <div class="navLink relative">
+                <a href="/vacancies">Работа у нас</a>
+              </div>  
+              <div class="navLink relative">
+                <a href="/news">Новости</a>
+              </div>  
+              <div class="navLink relative">
+                <a href="/contacts">Контакты</a>
+              </div>  
+            </nav>
+            <div class="languageChanger relative">
+              <a href="/" class="flexCenter langLink arrowLink">
+                <span>Русский</span>
+                <svg class="langSVG" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.8248 1.08749L6.00304 5.90999L1.18054 1.08749" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>  
+              </a>  
+              <div class="dropDownLang hidden">
+                <div class="dropDownContent">
+                  <p>O'zbekcha</p>
+                  <p>English</p>
+                </div>
+              </div>
+            </div>  
+          </div> 
+          <div class="scrollHeader hidden">
+            <div class="contentCenter scrollHeaderContent">
+              <div id="logoScroll">
+                <div class="logoScroll"><a href="/"><img class="logoImage" src="{% static 'media/fmxLogo.png' %}" alt="Logo"></a></div>
+              </div>
+              <nav class="navScroll">
+                <div class="navLink relative">
+                  <a class="active" href="/">Главная</a>
+                </div>  
+                <div class="navLink relative projectLinkDiv">
+                  <a href="/projects" class="flexCenter projectLinkScroll arrowLink">
+                    <span>Проекты</span>
+                    <svg class="projectSVGScroll" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.8248 1.08749L6.00304 5.90999L1.18054 1.08749" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>  
+                  </a>  
+                  <div class="dropDownProjects">
+                    <div class="dropDownContent">
+                      <p>Project 1</p>
+                      <p>Project 2</p>
+                    </div>
+                  </div>
+                </div>  
+                <div class="navLink relative serviceLinkDiv">
+                  <a href="/services" class="flexCenter serviceLinkScroll arrowLink">
+                    <span>Сервисы</span>
+                    <svg class="serviceSVGScroll" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.8248 1.08749L6.00304 5.90999L1.18054 1.08749" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>  
+                  </a>  
+                  <div class="dropDownService">
+                    <div class="dropDownContent">
+                      <p>Service 1</p>
+                      <p>Service 2</p>
+                    </div>
+                  </div>
+                </div>  
+                <div class="navLink relative">
+                  <a href="/about">О нас</a>
+                </div>  
+                <div class="navLink relative">
+                  <a href="/vacancies">Работа у нас</a>
+                </div>  
+                <div class="navLink relative">
+                  <a href="/news">Новости</a>
+                </div>  
+                <div class="navLink relative">
+                  <a href="/contacts">Контакты</a>
+                </div>  
+              </nav>
+              <div id="languageChanger" class="languageChanger relative">
+                <a href="/" class="flexCenter langLinkScroll arrowLink">
+                  <span>Русский</span>
+                  <svg class="langSVGScroll" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.8248 1.08749L6.00304 5.90999L1.18054 1.08749" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>  
+                </a>  
+                <div class="dropDownLang">
+                  <div class="dropDownContent">
+                    <p>O'zbekcha</p>
+                    <p>English</p>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div> 
+          <div class="hr"></div>
+        </div>
+        <div class="mobileHeaderContainer contentCenter">
+          <div class="mobileHeaderContent">
+            <div id="hamburger">
+              <span id="span1"></span>
+              <span id="span2"></span>
+              <span id="span3"></span>
+            </div>
+            <div class="mobileLogoDiv">
+              <div class="logo"><a href="/"><img class="logoImage" src="{% static 'media/fmxLogo.png' %}" alt="Logo"></a></div>
+            </div>
+          </div>
+          <div class="mobileHeader hidden">
+            <div class="mobileNav">
+              <a href="/">Главная</a>
+              <a href="/projects">Проекты</a>
+              <a href="/services">Сервисы</a>
+              <a href="/about">О нас</a>
+              <a href="/vacancies">Работа у нас</a>
+              <a href="/news">Новости</a>
+              <a href="/contacts">Контакты</a>
+              <a class="headerPhone" href="tel:+998889003009">+998 88 900-3-009</a>
+            </div>
+            <div class="mobileLanguageDiv">
+              <a href="#">Русский</a>
+              <a href="#">O'zbekcha</a>
+              <a href="#">English</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="contentCenter indexIntroTextDiv">
+        <p class="indexIntroText">крупнейшая <br id="br" /> компания в средней азии</p>
+        <p class="indexIntroAbsoluteText">ООО «UAT» осуществляет техническое обслуживание и ремонт самолетов различной сложности</p>
+      </div>
+      <div class="indexIntroImage">
+        <img src="{% static 'media/indexIntro.png' %}" alt="image">
+      </div>
+    </section>
+    <section class="statsIntro">
+      <div class="aboutInfoDiv contentCenter">
+        <div class="aboutInfo">
+          <div class="aboutInfo__div">
+            <p class="aboutInfoTitle">Надёжная команда</p>
+            <p class="aboutInfoSubtitle">Средний стаж работы наших специалистов более 7 лет</p>
+          </div>
+          <div class="aboutInfo__div">
+            <p class="aboutInfoTitle">Прозрачные цены</p>
+            <p class="aboutInfoSubtitle">Мы имеем все необходимые квалификационные сертификаты</p>
+          </div>
+          <div class="aboutInfo__div">
+            <p class="aboutInfoTitle">Честность</p>
+            <p class="aboutInfoSubtitle">ООО «UAT» осуществляет техническое обслуживание и ремонт самолетов</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="aboutContainer contentCenter">
+        <div class="aboutContent">
+          <p class="sectionTitle">О нас</p>
+          <div class="innerAbout">
+            <p class="aboutText">Акционерное общество «Узкимёсаноат» — целостная корпоративная структура, объединяющая химические предприятия Республики Узбекистан. Общество разрабатывает и реализует производственную, инновационную, маркетинговую программы развития химических предприятий, создавая тем самым условия и предпосылки для устойчивого развития отрасли в целом</p>
+            <a class="buttonRed" href="/about">Подробнее</a>
+          </div>
+          <div class="aboutBottomInfo">
+            <div class="bottomInfoStats">
+              <p class="statsNumber">100+</p>
+              <p class="statsContent">количество работников</p>
+            </div>
+            <div class="bottomInfoStats">
+              <p class="statsNumber">7+</p>
+              <p class="statsContent">более лет</p>
+            </div>
+            <div class="bottomInfoStats">
+              <p class="statsNumber">10+</p>
+              <p class="statsContent">награды в Асии</p>
+            </div>
+          </div>
+        </div>
+        <div class="aboutImage">
+          <img src="{% static 'media/indexAboutImage.png' %}" alt="image">
+        </div>
+      </div>
+    </section>
+    <section class="swiperSection">
+      <div class="contentCenter">
+        <div class="contentContainer">
+          <p class="sectionTitle">Популярные Проекты</p>
+          <div class="navButtons">
+            <div class="prevEl buttonSwiper">
+              <svg class="navButtonSvg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.328 24.5732L10.7547 15.9999L19.328 7.42657" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="nextEl buttonSwiper">
+              <svg class="navButtonSvg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.672 7.42676L21.2453 16.0001L12.672 24.5734" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a class="projectIndex" href="/projects">
+                <div class="projectIndexImage">
+                  <img src="{% static 'media/project1.png' %}" alt="image">
+                </div>
+                <div class="projectIndexContent">
+                  <p class="projectIndexTitle">Промышленный оборудование</p>
+                  <p class="projectIndexSubtitle">Базовая метрологическая служба и химико-аналитическая лаборатория</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="projectIndex" href="/projects">
+                <div class="projectIndexImage">
+                  <img src="{% static 'media/project1.png' %}" alt="image">
+                </div>
+                <div class="projectIndexContent">
+                  <p class="projectIndexTitle">Промышленный оборудование</p>
+                  <p class="projectIndexSubtitle">Базовая метрологическая служба и химико-аналитическая лаборатория</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="projectIndex" href="/projects">
+                <div class="projectIndexImage">
+                  <img src="{% static 'media/project1.png' %}" alt="image">
+                </div>
+                <div class="projectIndexContent">
+                  <p class="projectIndexTitle">Промышленный оборудование</p>
+                  <p class="projectIndexSubtitle">Базовая метрологическая служба и химико-аналитическая лаборатория</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="projectIndex" href="/projects">
+                <div class="projectIndexImage">
+                  <img src="{% static 'media/project1.png' %}" alt="image">
+                </div>
+                <div class="projectIndexContent">
+                  <p class="projectIndexTitle">Промышленный оборудование</p>
+                  <p class="projectIndexSubtitle">Базовая метрологическая служба и химико-аналитическая лаборатория</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="projectIndex" href="/projects">
+                <div class="projectIndexImage">
+                  <img src="{% static 'media/project1.png' %}" alt="image">
+                </div>
+                <div class="projectIndexContent">
+                  <p class="projectIndexTitle">Промышленный оборудование</p>
+                  <p class="projectIndexSubtitle">Базовая метрологическая служба и химико-аналитическая лаборатория</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flexCenter">
+          <a class="buttonRed" href="/news">Посмотреть все</a>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="contentCenter">
+        <p class="sectionTitle">Список наших сервисов</p>
+        <div class="serviceContent">
+          <div>
+            <a class="serviceIndex" href="/serviceDetail">
+              <div class="firstGrid">
+                <p class="serviceNumber">01</p>
+              </div>
+              <div class="serviceNameDiv">
+                <p class="serviceName">Промышленный оборудование</p>
+                <div class="hoverImage">
+                  <img src="{% static 'media/project1.png' %}" alt="image">
+                </div>
+              </div>
+              <div>
+                <p class="serviceText">Акционерное общество «Узкимёсаноат» — целостная корпоративная структура, объединяющая химические предприятия Республики Узбекистан.</p>
+              </div>
+              <div class="lastGrid">
+                <p class="podrobnee">Подробнее</p>
+                <svg class="podrobneeArrow" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.3118 5.9165C8.89758 5.9165 8.5618 6.25229 8.5618 6.6665C8.5618 7.08072 8.89758 7.4165 9.3118 7.4165V5.9165ZM25.3333 6.6665H26.0833C26.0833 6.25229 25.7475 5.9165 25.3333 5.9165V6.6665ZM24.5833 22.6861C24.5833 23.1003 24.9191 23.4361 25.3333 23.4361C25.7475 23.4361 26.0833 23.1003 26.0833 22.6861H24.5833ZM6.13633 24.8028C5.84343 25.0957 5.84343 25.5706 6.13633 25.8635C6.42922 26.1564 6.90409 26.1564 7.19699 25.8635L6.13633 24.8028ZM25.8399 7.22063C26.1328 6.92773 26.1328 6.45286 25.8399 6.15997C25.547 5.86707 25.0721 5.86707 24.7792 6.15997L25.8399 7.22063ZM9.3118 7.4165H25.3333V5.9165H9.3118V7.4165ZM24.5833 6.6665V22.6861H26.0833V6.6665H24.5833ZM7.19699 25.8635L25.8399 7.22063L24.7792 6.15997L6.13633 24.8028L7.19699 25.8635Z" fill="#F20009"/>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a class="serviceIndex" href="/serviceDetail">
+              <div class="firstGrid">
+                <p class="serviceNumber">02</p>
+              </div>
+              <div class="serviceNameDiv">
+                <p class="serviceName">Базовая метрологическая</p>
+                <div class="hoverImage">
+                  <img src="{% static 'media/project1.png' %}" alt="image">
+                </div>
+              </div>
+              <div>
+                <p class="serviceText">Акционерное общество «Узкимёсаноат» — целостная корпоративная структура, объединяющая химические предприятия Республики Узбекистан.</p>
+              </div>
+              <div class="lastGrid">
+                <p class="podrobnee">Подробнее</p>
+                <svg class="podrobneeArrow" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.3118 5.9165C8.89758 5.9165 8.5618 6.25229 8.5618 6.6665C8.5618 7.08072 8.89758 7.4165 9.3118 7.4165V5.9165ZM25.3333 6.6665H26.0833C26.0833 6.25229 25.7475 5.9165 25.3333 5.9165V6.6665ZM24.5833 22.6861C24.5833 23.1003 24.9191 23.4361 25.3333 23.4361C25.7475 23.4361 26.0833 23.1003 26.0833 22.6861H24.5833ZM6.13633 24.8028C5.84343 25.0957 5.84343 25.5706 6.13633 25.8635C6.42922 26.1564 6.90409 26.1564 7.19699 25.8635L6.13633 24.8028ZM25.8399 7.22063C26.1328 6.92773 26.1328 6.45286 25.8399 6.15997C25.547 5.86707 25.0721 5.86707 24.7792 6.15997L25.8399 7.22063ZM9.3118 7.4165H25.3333V5.9165H9.3118V7.4165ZM24.5833 6.6665V22.6861H26.0833V6.6665H24.5833ZM7.19699 25.8635L25.8399 7.22063L24.7792 6.15997L6.13633 24.8028L7.19699 25.8635Z" fill="#F20009"/>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a class="serviceIndex" href="/serviceDetail">
+              <div class="firstGrid">
+                <p class="serviceNumber">03</p>
+              </div>
+              <div class="serviceNameDiv">
+                <p class="serviceName">служба и химико-аналитическая</p>
+                <div class="hoverImage">
+                  <img src="{% static 'media/project1.png' %}" alt="image">
+                </div>
+              </div>
+              <div>
+                <p class="serviceText">Акционерное общество «Узкимёсаноат» — целостная корпоративная структура, объединяющая химические предприятия Республики Узбекистан.</p>
+              </div>
+              <div class="lastGrid">
+                <p class="podrobnee">Подробнее</p>
+                <svg class="podrobneeArrow" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.3118 5.9165C8.89758 5.9165 8.5618 6.25229 8.5618 6.6665C8.5618 7.08072 8.89758 7.4165 9.3118 7.4165V5.9165ZM25.3333 6.6665H26.0833C26.0833 6.25229 25.7475 5.9165 25.3333 5.9165V6.6665ZM24.5833 22.6861C24.5833 23.1003 24.9191 23.4361 25.3333 23.4361C25.7475 23.4361 26.0833 23.1003 26.0833 22.6861H24.5833ZM6.13633 24.8028C5.84343 25.0957 5.84343 25.5706 6.13633 25.8635C6.42922 26.1564 6.90409 26.1564 7.19699 25.8635L6.13633 24.8028ZM25.8399 7.22063C26.1328 6.92773 26.1328 6.45286 25.8399 6.15997C25.547 5.86707 25.0721 5.86707 24.7792 6.15997L25.8399 7.22063ZM9.3118 7.4165H25.3333V5.9165H9.3118V7.4165ZM24.5833 6.6665V22.6861H26.0833V6.6665H24.5833ZM7.19699 25.8635L25.8399 7.22063L24.7792 6.15997L6.13633 24.8028L7.19699 25.8635Z" fill="#F20009"/>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a class="serviceIndex" href="/serviceDetail">
+              <div class="firstGrid">
+                <p class="serviceNumber">04</p>
+              </div>
+              <div class="serviceNameDiv">
+                <p class="serviceName">Промышленный оборудование</p>
+                <div class="hoverImage">
+                  <img src="{% static 'media/project1.png' %}" alt="image">
+                </div>
+              </div>
+              <div>
+                <p class="serviceText">Акционерное общество «Узкимёсаноат» — целостная корпоративная структура, объединяющая химические предприятия Республики Узбекистан.</p>
+              </div>
+              <div class="lastGrid">
+                <p class="podrobnee">Подробнее</p>
+                <svg class="podrobneeArrow" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.3118 5.9165C8.89758 5.9165 8.5618 6.25229 8.5618 6.6665C8.5618 7.08072 8.89758 7.4165 9.3118 7.4165V5.9165ZM25.3333 6.6665H26.0833C26.0833 6.25229 25.7475 5.9165 25.3333 5.9165V6.6665ZM24.5833 22.6861C24.5833 23.1003 24.9191 23.4361 25.3333 23.4361C25.7475 23.4361 26.0833 23.1003 26.0833 22.6861H24.5833ZM6.13633 24.8028C5.84343 25.0957 5.84343 25.5706 6.13633 25.8635C6.42922 26.1564 6.90409 26.1564 7.19699 25.8635L6.13633 24.8028ZM25.8399 7.22063C26.1328 6.92773 26.1328 6.45286 25.8399 6.15997C25.547 5.86707 25.0721 5.86707 24.7792 6.15997L25.8399 7.22063ZM9.3118 7.4165H25.3333V5.9165H9.3118V7.4165ZM24.5833 6.6665V22.6861H26.0833V6.6665H24.5833ZM7.19699 25.8635L25.8399 7.22063L24.7792 6.15997L6.13633 24.8028L7.19699 25.8635Z" fill="#F20009"/>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="flexCenter">
+          <a class="buttonRed" href="/services">Посмотреть все</a>
+        </div>
+      </div>
+    </section>
+    <section class="formContainer">
+      <div id="formContent" class="contentCenter">
+        <p class="formTitle exo">Оставьте заявку, и мы свяжемся c вами в ближайшее время</p>
+        <form>
+          <div class="formInputTop">
+            <div class="inputTop">
+              <input type="text" placeholder="Имя" required>
+            </div>
+            <div class="inputTop">
+              <input type="email" placeholder="Эл. адрес" required>
+            </div>
+          </div>
+          <div class="formInputBottom">
+            <input type="text" placeholder="Подробно о проекте">
+          </div>
+          <div class="checkboxDiv">
+            <div class="preCheckBox">
+              <div id="checkboxDiv">
+                <input id="checkbox" type="checkbox">
+              </div>
+            </div>
+            <label id="agreeText" for="checkbox">Я даю согласие на обработку моих персональных данных</label>
+          </div>
+          <div class="submitButtonDiv">
+            <button id="submitBtn">Отправить</button>
+            <svg class="qiyshiqArrow" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.3118 5.9165C8.89758 5.9165 8.5618 6.25229 8.5618 6.6665C8.5618 7.08072 8.89758 7.4165 9.3118 7.4165V5.9165ZM25.3333 6.6665H26.0833C26.0833 6.25229 25.7475 5.9165 25.3333 5.9165V6.6665ZM24.5833 22.6861C24.5833 23.1003 24.9191 23.4361 25.3333 23.4361C25.7475 23.4361 26.0833 23.1003 26.0833 22.6861H24.5833ZM6.13633 24.8028C5.84343 25.0957 5.84343 25.5706 6.13633 25.8635C6.42922 26.1564 6.90409 26.1564 7.19699 25.8635L6.13633 24.8028ZM25.8399 7.22063C26.1328 6.92773 26.1328 6.45286 25.8399 6.15997C25.547 5.86707 25.0721 5.86707 24.7792 6.15997L25.8399 7.22063ZM9.3118 7.4165H25.3333V5.9165H9.3118V7.4165ZM24.5833 6.6665V22.6861H26.0833V6.6665H24.5833ZM7.19699 25.8635L25.8399 7.22063L24.7792 6.15997L6.13633 24.8028L7.19699 25.8635Z" fill="#F20009"/>
+            </svg>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="news">
+      <div class="contentCenter">
+        <p class="sectionTitle">Новости</p>
+        <div class="newsContainer">
+          <div class="newsDivBig">
+            <a class="newsBig" href="/newsDetail">
+              <div class="newsBigImage">
+                <img src="{% static 'media/newsBig.jpg' %}" alt="news">
+              </div>
+              <div class="newsContentBig">
+                <div class="newsStatsBig">
+                  <div>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4.23771C3 3.62857 3.4938 3.13477 4.10294 3.13477H11.8971C12.5062 3.13477 13 3.62857 13 4.23771V12.4833C13 13.0924 12.5062 13.5862 11.8971 13.5862H4.10294C3.4938 13.5862 3 13.0924 3 12.4833V4.23771Z" stroke="#020105" stroke-width="1.10294" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10 2.07422V4.37968" stroke="#020105" stroke-width="1.10294" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6 2.07422V4.37968" stroke="#020105" stroke-width="1.10294" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M3 6.27051H13" stroke="#020105" stroke-width="1.10294" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>14.02.2022</span>
+                  </div>
+                  <div>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.71484 8.21139C1.71484 8.21139 4.00056 3.43359 8.00056 3.43359C12.0006 3.43359 14.2863 8.21139 14.2863 8.21139C14.2863 8.21139 12.0006 12.9892 8.00056 12.9892C4.00056 12.9892 1.71484 8.21139 1.71484 8.21139Z" stroke="#020105" stroke-width="1.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99944 10.0033C8.94622 10.0033 9.71373 9.20111 9.71373 8.2116C9.71373 7.22208 8.94622 6.41992 7.99944 6.41992C7.05267 6.41992 6.28516 7.22208 6.28516 8.2116C6.28516 9.20111 7.05267 10.0033 7.99944 10.0033Z" stroke="#020105" stroke-width="1.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>268 473</span>
+                  </div>
+                </div>
+                <p class="newsTextBig">Базовая метрологическая служба и химико-аналитическая лаборатория Базовая метрологическая служба и химико-аналитическая лаборатория  лаборатория лаборатория</p>
+                <div class="newsLink">
+                  <p>Подробнее</p>
+                  <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.3118 5.9165C8.89758 5.9165 8.5618 6.25229 8.5618 6.6665C8.5618 7.08072 8.89758 7.4165 9.3118 7.4165V5.9165ZM25.3333 6.6665H26.0833C26.0833 6.25229 25.7475 5.9165 25.3333 5.9165V6.6665ZM24.5833 22.6861C24.5833 23.1003 24.9191 23.4361 25.3333 23.4361C25.7475 23.4361 26.0833 23.1003 26.0833 22.6861H24.5833ZM6.13633 24.8028C5.84343 25.0957 5.84343 25.5706 6.13633 25.8635C6.42922 26.1564 6.90409 26.1564 7.19699 25.8635L6.13633 24.8028ZM25.8399 7.22063C26.1328 6.92773 26.1328 6.45286 25.8399 6.15997C25.547 5.86707 25.0721 5.86707 24.7792 6.15997L25.8399 7.22063ZM9.3118 7.4165H25.3333V5.9165H9.3118V7.4165ZM24.5833 6.6665V22.6861H26.0833V6.6665H24.5833ZM7.19699 25.8635L25.8399 7.22063L24.7792 6.15997L6.13633 24.8028L7.19699 25.8635Z" fill="#F20009" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div id="bordercha"></div>
+          <div class="newsDiv">
+            <div>
+              <a class="news" href="/newsDetail">
+                <div class="newsContent">
+                  <div class="newsStats">
+                    <div>
+                      <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4.23771C3 3.62857 3.4938 3.13477 4.10294 3.13477H11.8971C12.5062 3.13477 13 3.62857 13 4.23771V12.4833C13 13.0924 12.5062 13.5862 11.8971 13.5862H4.10294C3.4938 13.5862 3 13.0924 3 12.4833V4.23771Z" stroke="#020105" stroke-width="1.10294" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 2.07422V4.37968" stroke="#020105" stroke-width="1.10294" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 2.07422V4.37968" stroke="#020105" stroke-width="1.10294" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3 6.27051H13" stroke="#020105" stroke-width="1.10294" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <span>14.02.2022</span>
+                    </div>
+                    <div>
+                      <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.71484 8.21139C1.71484 8.21139 4.00056 3.43359 8.00056 3.43359C12.0006 3.43359 14.2863 8.21139 14.2863 8.21139C14.2863 8.21139 12.0006 12.9892 8.00056 12.9892C4.00056 12.9892 1.71484 8.21139 1.71484 8.21139Z" stroke="#020105" stroke-width="1.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99944 10.0033C8.94622 10.0033 9.71373 9.20111 9.71373 8.2116C9.71373 7.22208 8.94622 6.41992 7.99944 6.41992C7.05267 6.41992 6.28516 7.22208 6.28516 8.2116C6.28516 9.20111 7.05267 10.0033 7.99944 10.0033Z" stroke="#020105" stroke-width="1.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <span>268 473</span>
+                    </div>
+                  </div>
+                  <p class="newsText">Базовая метрологическая служба и химико-аналитическая лаборатория лаборатория</p>
+                  <div class="newsLink">
+                    <p>Подробнее</p>
+                    <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.3118 5.9165C8.89758 5.9165 8.5618 6.25229 8.5618 6.6665C8.5618 7.08072 8.89758 7.4165 9.3118 7.4165V5.9165ZM25.3333 6.6665H26.0833C26.0833 6.25229 25.7475 5.9165 25.3333 5.9165V6.6665ZM24.5833 22.6861C24.5833 23.1003 24.9191 23.4361 25.3333 23.4361C25.7475 23.4361 26.0833 23.1003 26.0833 22.6861H24.5833ZM6.13633 24.8028C5.84343 25.0957 5.84343 25.5706 6.13633 25.8635C6.42922 26.1564 6.90409 26.1564 7.19699 25.8635L6.13633 24.8028ZM25.8399 7.22063C26.1328 6.92773 26.1328 6.45286 25.8399 6.15997C25.547 5.86707 25.0721 5.86707 24.7792 6.15997L25.8399 7.22063ZM9.3118 7.4165H25.3333V5.9165H9.3118V7.4165ZM24.5833 6.6665V22.6861H26.0833V6.6665H24.5833ZM7.19699 25.8635L25.8399 7.22063L24.7792 6.15997L6.13633 24.8028L7.19699 25.8635Z" fill="#F20009" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="newsImage">
+                  <img src="{% static 'media/news.png' %}" alt="news">
+                </div>
+              </a>
+            </div>
+            <div class="bordercha"></div>
+            <div>
+              <a class="news" href="/newsDetail">
+                <div class="newsContent">
+                  <div class="newsStats">
+                    <div>
+                      <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4.23771C3 3.62857 3.4938 3.13477 4.10294 3.13477H11.8971C12.5062 3.13477 13 3.62857 13 4.23771V12.4833C13 13.0924 12.5062 13.5862 11.8971 13.5862H4.10294C3.4938 13.5862 3 13.0924 3 12.4833V4.23771Z" stroke="#020105" stroke-width="1.10294" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 2.07422V4.37968" stroke="#020105" stroke-width="1.10294" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 2.07422V4.37968" stroke="#020105" stroke-width="1.10294" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3 6.27051H13" stroke="#020105" stroke-width="1.10294" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <span>14.02.2022</span>
+                    </div>
+                    <div>
+                      <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.71484 8.21139C1.71484 8.21139 4.00056 3.43359 8.00056 3.43359C12.0006 3.43359 14.2863 8.21139 14.2863 8.21139C14.2863 8.21139 12.0006 12.9892 8.00056 12.9892C4.00056 12.9892 1.71484 8.21139 1.71484 8.21139Z" stroke="#020105" stroke-width="1.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99944 10.0033C8.94622 10.0033 9.71373 9.20111 9.71373 8.2116C9.71373 7.22208 8.94622 6.41992 7.99944 6.41992C7.05267 6.41992 6.28516 7.22208 6.28516 8.2116C6.28516 9.20111 7.05267 10.0033 7.99944 10.0033Z" stroke="#020105" stroke-width="1.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <span>268 473</span>
+                    </div>
+                  </div>
+                  <p class="newsText">Базовая метрологическая служба и химико-аналитическая лаборатория лаборатория</p>
+                  <div class="newsLink">
+                    <p>Подробнее</p>
+                    <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.3118 5.9165C8.89758 5.9165 8.5618 6.25229 8.5618 6.6665C8.5618 7.08072 8.89758 7.4165 9.3118 7.4165V5.9165ZM25.3333 6.6665H26.0833C26.0833 6.25229 25.7475 5.9165 25.3333 5.9165V6.6665ZM24.5833 22.6861C24.5833 23.1003 24.9191 23.4361 25.3333 23.4361C25.7475 23.4361 26.0833 23.1003 26.0833 22.6861H24.5833ZM6.13633 24.8028C5.84343 25.0957 5.84343 25.5706 6.13633 25.8635C6.42922 26.1564 6.90409 26.1564 7.19699 25.8635L6.13633 24.8028ZM25.8399 7.22063C26.1328 6.92773 26.1328 6.45286 25.8399 6.15997C25.547 5.86707 25.0721 5.86707 24.7792 6.15997L25.8399 7.22063ZM9.3118 7.4165H25.3333V5.9165H9.3118V7.4165ZM24.5833 6.6665V22.6861H26.0833V6.6665H24.5833ZM7.19699 25.8635L25.8399 7.22063L24.7792 6.15997L6.13633 24.8028L7.19699 25.8635Z" fill="#F20009" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="newsImage">
+                  <img src="{% static 'media/news.png' %}" alt="news">
+                </div>
+              </a>
+            </div>
+            <div class="bordercha"></div>
+            <div>
+              <a class="news" href="/newsDetail">
+                <div class="newsContent">
+                  <div class="newsStats">
+                    <div>
+                      <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4.23771C3 3.62857 3.4938 3.13477 4.10294 3.13477H11.8971C12.5062 3.13477 13 3.62857 13 4.23771V12.4833C13 13.0924 12.5062 13.5862 11.8971 13.5862H4.10294C3.4938 13.5862 3 13.0924 3 12.4833V4.23771Z" stroke="#020105" stroke-width="1.10294" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 2.07422V4.37968" stroke="#020105" stroke-width="1.10294" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 2.07422V4.37968" stroke="#020105" stroke-width="1.10294" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3 6.27051H13" stroke="#020105" stroke-width="1.10294" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <span>14.02.2022</span>
+                    </div>
+                    <div>
+                      <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.71484 8.21139C1.71484 8.21139 4.00056 3.43359 8.00056 3.43359C12.0006 3.43359 14.2863 8.21139 14.2863 8.21139C14.2863 8.21139 12.0006 12.9892 8.00056 12.9892C4.00056 12.9892 1.71484 8.21139 1.71484 8.21139Z" stroke="#020105" stroke-width="1.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99944 10.0033C8.94622 10.0033 9.71373 9.20111 9.71373 8.2116C9.71373 7.22208 8.94622 6.41992 7.99944 6.41992C7.05267 6.41992 6.28516 7.22208 6.28516 8.2116C6.28516 9.20111 7.05267 10.0033 7.99944 10.0033Z" stroke="#020105" stroke-width="1.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <span>268 473</span>
+                    </div>
+                  </div>
+                  <p class="newsText">Базовая метрологическая служба и химико-аналитическая лаборатория лаборатория</p>
+                  <div class="newsLink">
+                    <p>Подробнее</p>
+                    <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.3118 5.9165C8.89758 5.9165 8.5618 6.25229 8.5618 6.6665C8.5618 7.08072 8.89758 7.4165 9.3118 7.4165V5.9165ZM25.3333 6.6665H26.0833C26.0833 6.25229 25.7475 5.9165 25.3333 5.9165V6.6665ZM24.5833 22.6861C24.5833 23.1003 24.9191 23.4361 25.3333 23.4361C25.7475 23.4361 26.0833 23.1003 26.0833 22.6861H24.5833ZM6.13633 24.8028C5.84343 25.0957 5.84343 25.5706 6.13633 25.8635C6.42922 26.1564 6.90409 26.1564 7.19699 25.8635L6.13633 24.8028ZM25.8399 7.22063C26.1328 6.92773 26.1328 6.45286 25.8399 6.15997C25.547 5.86707 25.0721 5.86707 24.7792 6.15997L25.8399 7.22063ZM9.3118 7.4165H25.3333V5.9165H9.3118V7.4165ZM24.5833 6.6665V22.6861H26.0833V6.6665H24.5833ZM7.19699 25.8635L25.8399 7.22063L24.7792 6.15997L6.13633 24.8028L7.19699 25.8635Z" fill="#F20009" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="newsImage">
+                  <img src="{% static 'media/news.png' %}" alt="news">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flexCenter">
+          <a class="buttonRed" href="/news">Посмотреть все</a>
+        </div>
+      </div>
+    </section>
+    <section class="mapjon">
+      <div class="mapDiv">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000.194558854364!2d69.16396002858434!3d41.239319712998714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae6272cae113a9%3A0xe0a92d15af00cc31!2zQnVueW9ka29yIHNob2gga28nY2hhc2ksINCi0L7RiNC60LXQvdGCLCBPYHpiZWtpc3Rvbg!5e0!3m2!1suz!2s!4v1652779804969!5m2!1suz!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="mapContentDiv">
+          <div class="contentCenter">
+            <div class="mapContent">
+              <div class="addressDiv">
+                <p class="addressTitle">Адрес:</p>
+                <p id="addressContent" class="addressContent">ул.Бунёдкор 9, Чиланзарский район, Ташкент, Узбекистан</p>
+              </div>
+              <div class="emailDiv">
+                <p class="addressTitle">Эл. адрес:</p>
+                <a class="addressContent" href="mailto:info@fmx.com">info@fmx.com</a>
+              </div>
+              <div class="telephoneDiv">
+                <p class="addressTitle">Телефон:</p>
+                <a class="addressContent" href="tel:+998996666666">+998 99 666 66 66</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobileMapContentBig">
+        <div class="contentCenter">
+          <div class="mobileMapContent">
+            <div class="addressDiv">
+              <p class="addressTitle">Адрес:</p>
+              <p id="addressContent" class="addressContent">ул.Бунёдкор 9, Чиланзарский район, Ташкент, Узбекистан</p>
+            </div>
+            <div class="emailDiv">
+              <p class="addressTitle">Эл. адрес:</p>
+              <a class="addressContent" href="mailto:info@fmx.com">info@fmx.com</a>
+            </div>
+            <div class="telephoneDiv">
+              <p class="addressTitle">Телефон:</p>
+              <a class="addressContent" href="tel:+998996666666">+998 99 666 66 66</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}

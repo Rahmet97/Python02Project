@@ -1,0 +1,252 @@
+.pageIntro {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.pageIntroTitle {
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 600;
+}
+
+.pageIntroSubtitle {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-color);
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.activePage {
+    color: var(--red);
+}
+
+.centerButton {
+    padding-top: 48px;
+}
+
+.vacancy {
+    width: 100%;
+    border: 1px solid #D7D6D7;
+}
+
+.vacanciesDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.vacancyContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+    padding: 24px;
+    color: var(--text-color);
+    transition: all 300ms;
+}
+
+.vacancyContent:hover {
+    background-color: var(--red);
+    color: #fff;
+}
+
+.vacancyContent:hover .vacancySubtitle {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.vacancyContent:hover .vacancyNumber {
+    color: #fff;
+    opacity: 0.64;
+}
+
+.vacancyTitle {
+    font-family: var(--exo);
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.vacancySubtitle {
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.4;
+    margin-top: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.vacancyNumber {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 500;
+    color: var(--text-color);
+    opacity: 0.16;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    overflow-y: scroll;
+    transition: all 400ms;
+}
+
+.display-none {
+    display: none;
+}
+
+.maska {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 400ms;
+}
+
+.modalContent {
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+    transition: all 400ms;
+    height: 700px;
+    overflow-y: scroll;
+}
+
+.xSVG {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.modalTitle {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    font-family: var(--exo);
+    text-transform: uppercase;
+}
+
+.modalSubtitle {
+    opacity: 0.4;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 16px 0 40px 0;
+}
+
+.modalInnerTitle {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.infoModal {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.trebovaniye {
+    max-width: 727px;
+    width: 100%;
+    margin-left: 18px;
+    opacity: 0.4;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.obyazannost {
+    max-width: 727px;
+    width: 100%;
+    margin-left: 18px;
+    opacity: 0.4;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.usloviya {
+    max-width: 727px;
+    width: 100%;
+    margin-left: 18px;
+    opacity: 0.4;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+    .vacanciesDiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .vacancyTitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .vacancySubtitle {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .vacancyNumber {
+        font-size: 28px;
+    }
+    .pageIntro {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .pageIntroSubtitle {
+        margin-top: 8px;
+    }
+    .xSVG {
+        top: 24px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 470px) {
+    .vacanciesDiv {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .vacancyTitle {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .vacancySubtitle {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .vacancyNumber {
+        font-size: 24px;
+    }
+    .modalTitle {
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .modalSubtitle {
+        padding: 8px 0;
+    }
+}

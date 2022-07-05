@@ -1,0 +1,138 @@
+.pageIntro {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.pageIntroTitle {
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 600;
+}
+
+.pageIntroSubtitle {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-color);
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.activePage {
+    color: var(--red);
+}
+
+.centerButton {
+    padding-top: 48px;
+}
+
+.service {
+    width: 100%;
+    border: 1px solid #D7D6D7;
+}
+
+.servicesDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.serviceContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+    padding: 24px;
+    color: var(--text-color);
+    transition: all 300ms;
+}
+
+.serviceContent:hover {
+    background-color: var(--red);
+    color: #fff;
+}
+
+.serviceContent:hover .serviceSubtitle {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.serviceContent:hover .serviceNumber {
+    color: #fff;
+    opacity: 0.64;
+}
+
+.serviceTitle {
+    font-family: var(--exo);
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.serviceSubtitle {
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.4;
+    margin-top: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.serviceNumber {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 500;
+    color: var(--text-color);
+    opacity: 0.16;
+}
+
+@media (max-width: 768px) {
+    .servicesDiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .serviceTitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .serviceSubtitle {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .serviceNumber {
+        font-size: 28px;
+    }
+    .pageIntro {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .pageIntroSubtitle {
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 470px) {
+    .servicesDiv {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .serviceTitle {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .serviceSubtitle {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .serviceNumber {
+        font-size: 24px;
+    }
+}

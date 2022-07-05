@@ -1,0 +1,698 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.mapjon {
+    margin-top: 120px;
+}
+
+.indexIntroTextDiv {
+    padding: 32px 15px;
+    position: relative;
+}
+
+.bordercha {
+    height: 1px;
+    background-color: #D6D6D7;
+    width: 100%;
+    margin: 24px 0;
+}
+
+.sectionTitle {
+    font-size: 56px;
+    line-height: 64px;
+    color: var(--text-color);
+    font-weight: 700;
+    font-family: var(--exo);
+    text-transform: uppercase;
+}
+
+.indexIntroText {
+    font-size: 80px;
+    line-height: 88px;
+    font-family: var(--exo);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.indexIntroAbsoluteText {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    max-width: 600px;
+    z-index: -1;
+}
+
+.aboutContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 120px 15px;
+    gap: 24px;
+}
+
+.aboutContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.aboutImage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.aboutImage img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutText {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.innerAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.aboutBottomInfo {
+    margin-top: 24px;
+    background-color: var(--gray);
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 64px;
+}
+
+.aboutInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 32px;
+    align-items: flex-start;
+}
+
+.aboutInfo__div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.aboutInfoTitle {
+    font-size: 28px;
+    line-height: 40px;
+    color: var(--red);
+    font-family: var(--exo);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.aboutInfoSubtitle {
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--text-color);
+    opacity: 0.72;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.bottomInfoStats {
+    width: 100%;
+}
+
+.statsNumber {
+    font-size: 64px;
+    line-height: 88px;
+    font-weight: 600;
+    font-family: var(--exo);
+}
+
+.statsContent {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+.indexIntroImage {
+    position: relative;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+.indexIntroImage img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===== NewsSection ===== */
+.newsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    padding: 40px 0 80px 0;
+}
+
+.newsDivBig {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.newsBig {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.newsBigImage {
+    position: relative;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+.newsBigImage img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.newsContentBig {
+    padding-top: 20px;
+}
+
+.newsStatsBig {
+    display: flex;
+    gap: 16px;
+    opacity: 0.48;
+}
+
+.newsStatsBig > div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.newsTextBig {
+    margin: 20px 0 32px 0;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--text-color);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.newsDiv {
+    width: 100%;
+}
+
+.news1 {
+    display: flex;
+    gap: 24px;
+}
+
+.news {
+    display: flex;
+    gap: 24px;
+}
+
+.newsStats {
+    display: flex;
+    gap: 16px;
+    color: var(--text-color);
+    opacity: 0.48;
+}
+
+.newsStats > div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.newsContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newsImage {
+    position: relative;
+    width: 100%;
+    height: 160px;
+}
+
+.newsText {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    color: var(--text-color);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.newsLink {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.newsLink p {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: var(--exo);
+    text-transform: uppercase;
+    color: var(--red);
+}
+
+.newsImage img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#bordercha {
+    display: none;
+}
+
+.swiper {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.swiper-slide {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navButtons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.navButtonSvg {
+    width: 32px;
+    height: 32px;
+}
+
+.buttonSwiper {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.projectIndex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 24px;
+    border-left: 1px solid #D6D6D7;
+}
+
+.projectIndexImage {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.projectIndexImage img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 400ms;
+}
+
+.projectIndexImage img:hover {
+    transform: scale(1.1);
+    transition: all 400ms;
+}
+
+.projectIndexContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.projectIndexTitle {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--red);
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.projectIndexSubtitle {
+    text-align: left;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.services {
+    padding: 120px 0 72px 0;
+}
+
+.serviceContent {
+    padding: 40px 0;
+}
+
+.serviceIndex {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 1fr 0.5fr;
+    gap: 8px;
+    align-items: center;
+    height: 170px;
+    width: 100%;
+    border-top: 1px solid #D6D6D7;
+    border-bottom: 1px solid #D6D6D7;
+    opacity: 0.56;
+    transition: all 400ms;
+    position: relative;
+}
+
+.serviceIndex:hover {
+    opacity: 1;
+    transition: all 400ms;
+}
+
+.serviceIndex:hover .serviceNumber {
+    opacity: 1;
+    transition: all 400ms;
+}
+
+.serviceIndex:hover .hoverImage img {
+    opacity: 1;
+    transition: all 400ms;
+}
+
+.serviceNumber {
+    font-size: 32px;
+    line-height: 40px;
+    opacity: 0.16;
+    transition: all 400ms;
+}
+
+.serviceNameDiv {
+    position: relative;
+}
+
+.serviceName {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+    text-overflow: ellipsis;
+    font-family: var(--exo);
+    z-index: 2;
+}
+
+.serviceText {
+    font-size: 16px;
+    line-height: 24px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;  
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.podrobnee {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: var(--red);
+    font-family: var(--exo);
+    text-transform: uppercase;
+}
+
+.podrobneeArrow {
+    width: 24px;
+    height: 24px;
+}
+
+.firstGrid {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.lastGrid {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.hoverImage img {
+    position: absolute;
+    top: 60px;
+    left: -50px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    z-index: 3;
+    opacity: 0;
+    transition: all 400ms;
+}
+
+@media (max-width: 1160px) {
+    .indexIntroAbsoluteText {
+        display: none;
+    }
+    .newsStats > div {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 920px) {
+    .aboutBottomInfo {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 24px;
+    }
+    #br {
+        display: none;
+    }
+    .indexIntroText {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .newsText {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .newsImage {
+        height: 140px;
+    }
+    .newsTextBig {
+        font-size: 18px;
+        line-height: 28px;
+        margin: 16px 0;
+    }
+    .aboutContainer {
+        grid-template-columns: 1fr;
+    }
+    .aboutImage {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutInfo {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .aboutInfo__div {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .indexIntroText {
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+    }
+    .newsContainer {
+        grid-template-columns: 1fr;
+    }
+    .newsText {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .newsBigImage {
+        height: 300px;
+    }
+    #bordercha {
+        height: 1px;
+        background-color: #D6D6D7;
+        display: block;
+    }
+    .logo {
+        width: 150px;
+        height: 40px;
+    }
+    .navButtons {
+        display: none;
+    }
+    .aboutImage {
+        height: 360px;
+    }
+    .serviceIndex {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        place-items: center;
+        height: auto;
+        padding: 24px 0;
+    }
+    .serviceName {
+        text-align: center;
+    }
+    .serviceText {
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .projectIndex {
+        border-right: 1px solid #D6D6D7;
+    }
+    .projectIndexSubtitle {
+        font-size: 18px;
+    }
+    .projectIndexImage {
+        height: 240px;
+    }
+    .projectIndexContent {
+        margin-top: 12px;
+        gap: 12px;
+    }
+    .aboutImage {
+        height: 320px;
+    }
+}
+
+@media (max-width: 440px) {
+    .projectIndex {
+        padding: 12px;
+    }
+    .indexIntroText {
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+    }
+    .news {
+        flex-direction: column-reverse;
+    }
+    .newsImage {
+        height: 200px;
+    }
+    .newsText {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 20px 0;
+    }
+    .newsBigImage {
+        height: 200px;
+    }
+    .sectionTitle {
+        text-align: center;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .aboutText {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .innerAbout {
+        align-items: center;
+    }
+    .aboutImage {
+        height: 240px;
+    }
+}

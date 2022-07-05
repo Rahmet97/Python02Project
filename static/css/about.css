@@ -1,0 +1,200 @@
+.pageIntro {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.pageIntroTitle {
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 600;
+}
+
+.pageIntroSubtitle {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-color);
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.activePage {
+    color: var(--red);
+}
+
+.aboutInfoImage {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.aboutInfoImage img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 32px;
+}
+
+.aboutInfo__div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.aboutInfoTitle {
+    font-size: 28px;
+    line-height: 40px;
+    color: var(--red);
+    font-family: var(--exo);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.aboutInfoSubtitle {
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--text-color);
+    opacity: 0.72;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.aboutInfoDivBottom {
+    margin-top: 88px;
+}
+
+.aboutInfo2Title {
+    font-family: var(--exo);
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.bottomGridAbout {
+    /* border: 1px solid black; */
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.aboutBottomTextDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.aboutBottomInfoDiv {
+    width: 100%;
+}
+
+.aboutBottomInfoDiv > p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.aboutBottomInfo {
+    margin-top: 24px;
+    background-color: var(--gray);
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 64px;
+}
+
+.bottomInfoStats {
+    width: 100%;
+}
+
+.statsNumber {
+    font-size: 64px;
+    line-height: 88px;
+    font-weight: 600;
+    font-family: var(--exo);
+}
+
+.statsContent {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+.bottomAboutImage {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 40px;
+}
+
+.bottomAboutImage img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 920px) {
+    .aboutBottomInfo {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pageIntro {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .pageIntroSubtitle {
+        margin-top: 8px;
+    }
+    .aboutInfo {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .aboutInfoImage {
+        height: 400px;
+    }
+    .aboutInfo__div {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .bottomGridAbout {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .aboutInfo2Title {
+        text-align: center;
+        font-size: 22px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 470px) {
+    .aboutInfoImage {
+        height: 240px;
+    }
+    .bottomAboutImage {
+        height: 240px;
+    }
+}

@@ -1,0 +1,256 @@
+.pageIntro {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.pageIntroTitle {
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 600;
+}
+
+.pageIntroSubtitle {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-color);
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+
+.activePage {
+    color: var(--red);
+}
+
+/* ===== NewsSection ===== */
+
+.buttoncha {
+    padding-top: 100px;
+}
+
+.newsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.newsDivBig {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.newsBig {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.newsBigImage {
+    position: relative;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+.newsBigImage img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.newsContentBig {
+    padding-top: 20px;
+}
+
+.newsStatsBig {
+    display: flex;
+    gap: 16px;
+    opacity: 0.48;
+}
+
+.newsStatsBig > div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.newsTextBig {
+    margin: 20px 0 32px 0;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--text-color);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.newsDiv {
+    width: 100%;
+}
+
+.news1 {
+    display: flex;
+    gap: 24px;
+}
+
+.news {
+    display: flex;
+    gap: 24px;
+}
+
+.newsStats {
+    display: flex;
+    gap: 16px;
+    color: var(--text-color);
+    opacity: 0.48;
+}
+
+.newsStats > div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.newsContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newsImage {
+    position: relative;
+    width: 100%;
+    height: 160px;
+}
+
+.newsText {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    color: var(--text-color);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.newsLink {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.newsLink p {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: var(--exo);
+    text-transform: uppercase;
+    color: var(--red);
+}
+
+.newsImage img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bordercha {
+    height: 1px;
+    background-color: #D6D6D7;
+    width: 100%;
+    margin: 24px 0;
+}
+
+.newsContainer2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+#bordercha {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .pageIntro {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .pageIntroSubtitle {
+        margin-top: 8px;
+    }
+    .newsContainer {
+        grid-template-columns: 1fr;
+    }
+    .newsContainer2 {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .newsText {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .newsBigImage {
+        height: 300px;
+    }
+    #bordercha {
+        height: 1px;
+        background-color: #D6D6D7;
+        display: block;
+    }
+    .buttoncha {
+        padding-top: 80px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .newsStats > div {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 920px) {
+    .newsText {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .newsImage {
+        height: 140px;
+    }
+    .newsTextBig {
+        font-size: 18px;
+        line-height: 28px;
+        margin: 16px 0;
+    }
+}
+
+@media (max-width: 440px) {
+    .news {
+        flex-direction: column-reverse;
+    }
+    .newsImage {
+        height: 200px;
+    }
+    .newsText {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 20px 0;
+    }
+    .newsBigImage {
+        height: 200px;
+    }
+}

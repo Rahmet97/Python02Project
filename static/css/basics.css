@@ -1,0 +1,990 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --text-color: #020105;
+    --red: #F20009;
+    --gray: #F5F5F7;
+    --exo: 'Exo 2', sans-serif; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.rotate {
+    transform: rotate(180deg);
+    transition: all 300ms;
+}
+
+.projectSVG {
+    transition: all 300ms;
+}
+
+.serviceSVG {
+    transition: all 300ms;
+}
+
+.langSVG {
+    transition: all 300ms;
+}
+
+.langSVGScroll {
+    transition: all 300ms;
+}
+
+.projectSVGScroll {
+    transition: all 300ms;
+}
+
+.serviceSVGScroll {
+    transition: all 300ms;
+}
+
+#span1 {
+    transition: all 300ms;
+}
+#span2 {
+    transition: all 300ms;
+}
+#span3 {
+    transition: all 300ms;
+}
+
+.rotate45deg {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+}
+.rotate-45deg {
+    transform: rotate(-45deg);
+    transition: all 400ms;
+}
+
+input {
+    border: none;
+    width: 100%;
+    padding: 16px 0;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--text-color);
+    background: none;
+    border-bottom: 1px solid var(--text-color);
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+.qiyshiqArrow {
+    width: 32px;
+    height: 32px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    text-transform: uppercase;
+    font-family: var(--exo);
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.overflow-y-hidden {
+    overflow-y: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+footer {
+    background-color: var(--gray);
+    position: relative;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+.hr {
+    background-color: var(--text-color);
+    opacity: 0.16;
+    height: 0.5px;
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.exo {
+    font-family: 'Exo 2', sans-serif;  
+}
+
+.hidden {
+    display: none;
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.border-red {
+    border: 1px solid red;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.contentCenter {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* border: 1px solid black; */
+}
+
+.buttonRed {
+    background-color: var(--red);
+    color: #FFF;
+    padding: 16px 40px;
+    transition: all 300ms;
+    border: 1px solid var(--red);
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.buttonRed:hover {
+    background-color: #fff;
+    color: var(--red);
+}
+
+.buttonWhite {
+    background-color: #FFF;
+    color: var(--red);
+    padding: 16px 40px;
+    border: 1px solid var(--red);
+    border-radius: 2px;
+    transition: all 300ms;
+}
+.buttonWhite:hover {
+    background-color: var(--red);
+    color: #FFF;
+}
+
+.logo {
+    position: relative;
+    width: 215px;
+    height: 45px;
+}
+
+.logoScroll {
+    position: relative;
+    width: 180px;
+    height: 40px;
+}
+
+.logoImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.headerContact {
+    position: absolute;
+    right: 15px;
+    gap: 50px;
+}
+
+.headerPhone {
+    gap: 10px;
+    font-weight: 500;
+    transition: all 300ms;
+}
+.headerPhone:hover {
+    color: var(--red);
+}
+
+.contactUs {
+    justify-self: flex-end;
+}
+
+.inner2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    z-index: 1;
+}
+
+.scrollHeader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    transition: all 300ms;
+    animation: fadeIn 300ms ease 1;
+    z-index: 4;
+}
+
+.scrollHeaderContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: relative;
+    width: 100%;
+}
+
+.arrowLink {
+    gap: 10px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.navScroll {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.inner1 {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    position: relative;
+}
+
+.companyInfo {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4B4C58;
+    opacity: 0.6;
+    max-width: 287px;
+    width: 100%;
+    margin-left: 100px;
+}
+
+.borderLink {
+    border-bottom: 2px solid var(--red);
+    padding: 0 0 2.5px 0;
+}
+
+.active {
+    border-bottom: 2px solid var(--red);
+}
+
+.navLink a:hover {
+    color: var(--red);
+    transition: all 300ms;
+}
+
+.languageChanger a {
+    padding: 20px 0;
+}
+
+.languageChanger:hover .dropDownLang {
+    opacity: 1;
+    transition: all 400ms;
+    display: block;
+}
+
+.serviceLinkDiv:hover .dropDownService {
+    opacity: 1;
+    transition: all 400ms;
+}
+
+.projectLinkDiv:hover .dropDownProjects {
+    opacity: 1;
+    transition: all 400ms;
+}
+
+.langLink {
+    position: relative;
+}
+
+.dropDownService {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    padding: 0 10px 10px 10px;
+    opacity: 0;
+    z-index: 3;
+}
+
+.dropDownProjects {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    padding: 0 10px 10px 10px;
+    opacity: 0;
+    z-index: 3;
+}
+
+.dropDownLang {
+    position: absolute;
+    top: 40px;
+    left: -20px;
+    padding: 0 10px 10px 10px;
+    opacity: 0;
+    z-index: 3;
+}
+
+.dropDownContent {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    z-index: 3;
+}
+
+.dropDownContent p {
+    padding: 10px 0;
+    transition: all 300ms;
+}
+
+.dropDownContent p:hover {
+    color: var(--red);
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+/* .dropDownContent::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 12px;
+    height: 10px;
+    background: #000;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+} */
+
+/* ===== FORM ===== */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer {
+    background-color: var(--gray);
+    margin: 120px 0;
+}
+
+#formContent {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.formTitle {
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: 730px;
+    width: 100%;
+}
+
+.formInputTop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.checkboxDiv {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    opacity: 0.4;
+    gap: 10px;
+}
+
+.preCheckBox {
+    width: 24px;
+    height: 24px;
+}
+
+#checkboxDiv {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#checkbox {
+    width: 12px;
+    height: 12px;
+}
+
+.formInputBottom {
+    margin-top: 76px;
+}
+
+.inputTop {
+    width: 100%;
+}
+
+.submitButtonDiv {
+    display: flex;
+    align-items: center;
+    margin-top: 56px;
+    gap: 8px;
+    cursor: pointer;
+}
+
+#submitBtn {
+    color: var(--red);
+    font-size: 24px;
+    line-height: 32px;
+    font-family: var(--exo);
+    text-transform: uppercase;
+    font-weight: 600;
+    background: none;
+    cursor: pointer;
+}
+
+.moreButton {
+    padding: 16px 41px;
+    background-color: var(--red);
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 2px;
+    transition: all 300ms;
+    border: 1px solid var(--red);
+}
+
+.moreButton:hover {
+    background-color: #fff;
+    color: var(--red);
+}
+
+/* FOOTER */
+.footer__inner {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ft__inner1__titles {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    color: var(--text-color);
+}
+
+#ft_title1 {
+    margin-top: 56px;
+}
+
+#ft_title2 {
+    margin-top: 50px;
+}
+
+#ft_title3 {
+    margin-top: 16px;      
+}
+
+.smDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.sm {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ft__inner2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.medium_footer_title {
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.ft__inner2__innerNav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: #49484B;
+    font-weight: 400;
+}
+
+.ft__inner2__innerNav a {
+    opacity: 0.8;
+}
+
+.ft__inner2__innerNav a:hover {
+    text-decoration: underline;
+}
+
+.ft__inner3 {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+#location {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+#location p {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+#footerPhoneDiv {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+#footerPhoneDiv p {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#footerEmail {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+#footerEmail p {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#toTopBtn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 75px;
+    right: 120px;
+}
+
+#toTopSVG {
+    width: 40px;
+    height: 40px;
+}
+
+.mobileHeaderContainer {
+    display: none;
+}
+
+.mobileFooterContainer {
+    display: none;
+}
+
+#hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+#hamburger span {
+    width: 20px;
+    height: 2.5px;
+    background-color: var(--text-color);
+}
+
+
+.mapDiv {
+    position: relative;
+    width: 100%;
+    height: 660px;
+    margin-bottom: 320px;
+}
+
+.map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.mapContentDiv {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.mapContent {
+    background-color: var(--gray);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: absolute;
+    top: 528px;
+}
+
+.addressDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.emailDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.telephoneDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.addressTitle {
+    color: #667B8C;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.addressContent {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+#addressContent {
+    max-width: 432px;
+    width: 100%;
+}
+
+.mobileMapContent {
+    display: none;
+}
+
+.newsContainer img {
+    transition: all 400ms;
+}
+
+.news img {
+    transition: all 400ms;
+}
+
+.newsBigImage {
+    overflow: hidden;
+}
+
+.newsImage {
+    overflow: hidden;
+}
+
+.newsBigImage img:hover {
+    transform: scale(1.1);
+    transition: all 400ms;
+}
+
+.newsImage img:hover {
+    transform: scale(1.1);
+    transition: all 400ms;
+}
+
+.projectImage {
+    overflow: hidden;
+}
+
+.projectImage img {
+    transition: all 400ms;
+}
+
+.projectImage img:hover {
+    transform: scale(1.1);
+    transition: all 400ms;
+}
+
+@media (max-width: 440px) {
+    .mapDiv {
+        height: 240px;
+    }
+    .formTitle {
+        text-align: center;
+    }
+    #submitBtn {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        border-bottom: 1px solid #ccc;
+    }
+    .header__inner {
+        display: none;
+    }
+    .mobileHeaderContainer {
+        display: block;
+    }
+    .mobileHeaderContent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        animation: fadeIn 400ms ease 1;
+    }
+    .mobileHeader {
+        position: fixed;
+        inset: 0;
+        z-index: 2;
+        flex-direction: column;
+        background: #FFF;
+        animation: fadeIn 300ms ease 1; 
+    }
+    .mobileLanguageDiv {
+        display: flex;
+        position: absolute;
+        bottom: 30px;
+    }
+    .mobileLanguageDiv a {
+        border-right: 2px solid black;
+        padding: 0 10px;
+    }
+    .mobileLanguageDiv a:last-child {
+        border-right: none;
+        padding-left: 10px;
+    }
+    .mobileNav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    .mobileNav a:hover {
+        color: var(--red);
+        transition: all 300ms;
+    }
+    #hamburger {
+        position: absolute;
+        left: 15px;
+        z-index: 3;
+    }
+    .logo {
+        width: 180px;
+        height: 50px;
+        z-index: 3;
+    }
+    .mapContent {
+        display: none;
+    }
+    .mobileMapContentBig {
+        background-color: var(--gray);
+        margin: 120px 0;
+    }
+    .mobileMapContent {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 40px 0;
+    }
+    .mapDiv {
+        height: 360px;
+        margin-bottom: 0;
+    }
+    /* Form */
+    #formContent {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .formInputTop {
+        grid-template-columns: 1fr;
+    }
+    .formInputTop {
+        margin-top: 24px;
+    }
+    .formInputBottom {
+        margin-top: 24px;
+    }
+    .formTitle {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .qiyshiqArrow {
+        width: 24px;
+        height: 24px;
+    }
+    input::placeholder {
+        font-size: 16px;
+    }
+    input {
+        padding: 8px 0;
+        font-size: 16px;
+    }
+    .submitButtonDiv {
+        margin-top: 24px;
+    }
+    /* Footer */
+    .mobileFooterContainer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .footer__inner {
+        display: none;
+    }
+    .ft__inner1__titles {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+    #ft_title1 {
+        margin-top: 48px;
+    }
+    #ft_title2 {
+        margin-top: 48px;
+    }
+    .smDiv {
+        justify-content: center;
+    }
+    .medium_footer_title {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .ft__inner3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #location {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+    }
+    .footerContacts {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+    }
+    #footerEmail {
+        margin-top: 16px;
+    }
+    #footerPhoneDiv {
+        margin-top: 16px;
+    }
+    #toTopBtn {
+        width: 44px;
+        height: 44px;
+        right: 30px;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 920px) {
+    .inner2 {
+        display: none;
+    }
+    .headerContact {
+        gap: 24px;
+    }
+    .mapDiv {
+        height: 500px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .nav {
+        gap: 40px;
+    }
+    .navScroll {
+        gap: 20px;
+    }
+    .logoScroll {
+        width: 140px;
+    }
+    .logoDiv {
+        position: absolute;
+        left: 15px;
+    }
+    .companyInfo {
+        display: none;
+    }
+}
