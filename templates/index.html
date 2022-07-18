@@ -88,6 +88,15 @@
                 </div>
               </div>
             </div>  
+            {% if user.is_authenticated %}
+            <div class="navLink relative">
+              <span>{{ user.first_name }}</span>
+            </div>
+            {% else %}
+            <div class="navLink relative">
+              <a href="accounts/login">Вход</a>
+            </div>
+            {% endif %}
           </div> 
           <div class="scrollHeader hidden">
             <div class="contentCenter scrollHeaderContent">

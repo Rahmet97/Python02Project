@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Not official page of Clash Royale" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="{% static 'css/sign_up.css' %}" />
+  </head>
+  <body>
+    <main class="signUpMain">
+      <form method="post" class="signUpForm">
+        {% csrf_token %}
+        <p class="signUpTitle">Sign Up qilishga xush kelibsiz!</p>
+        <div class="formInput">
+          <input class="inputjon" name="name" type="text" placeholder="Ism*" />
+        </div>
+        <div class="formInput">
+          <input class="inputjon" name="surname" type="text" placeholder="Familiya*" />
+        </div>
+        <div class="formInput">
+          <input class="inputjon" name="username" type="text" placeholder="Username*" />
+        </div>
+        <div class="formInput">
+          <input class="inputjon" name="email" type="email" placeholder="Email*" />
+        </div>
+        <div class="formInput">
+          <input class="inputjon" name="password" type="password" placeholder="Password*" />
+        </div>
+        <div class="formInput">
+          <input class="inputjon" name="password_check" type="password" placeholder="Passwordni qayta kiriting*" />
+        </div>
+        <button class="secondaryButton" type="submit">Kirish</button>
+      </form>  
+    </main>
+  </body>
+</html>
