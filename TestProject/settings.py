@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main'
+    'main',
+    'accounts'
 ]
 
 MIDDLEWARE = [
@@ -77,16 +78,11 @@ WSGI_APPLICATION = 'TestProject.wsgi.application'
 
 DATABASES = {
     'default': {
-<<<<<<< HEAD
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'foshanmix_db',
         'USER': 'root',
         'PASSWORD': '',
         'PORT': 3306
-=======
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3'
->>>>>>> 49ab873 (User authentication done)
     }
 }
 
