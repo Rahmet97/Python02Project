@@ -7,26 +7,7 @@ from django.contrib import messages
 from django.views import View
 from .forms import LoginForm, RegisterForm
 from django.contrib.auth.hashers import make_password, check_password
-from django.core.mail import send_mail
 
-# def login(request):
-#     if request.method == 'POST':
-#         loginForm = LoginForm(request.POST)
-#         if loginForm.is_valid():
-#             username = loginForm.cleaned_data['username']
-#             password = loginForm.cleaned_data['password']
-
-#             user = User.objects.get(username=username)
-#             print(user)
-#             if check_password(password, user.password):
-#                 auth.login(request, user)
-#                 return redirect('/')
-#             else:
-#                 messages.error(request, "Username or password is invalid!")
-#                 return redirect('login')
-#     else:
-#         loginForm = LoginForm()
-#     return render(request, "login.html", {'loginForm': loginForm})
 
 class LoginView(View):
     template_name = 'login.html'
@@ -58,17 +39,19 @@ class LoginView(View):
             messages.error(request, "Username or password is invalid!")
             return redirect('login')
 
+
 class RegisterView(View):
     template_name = 'sign_up.html'
-    initial = {'key':'value'}
+    initial = {'key': 'value'}
     form_class = RegisterForm
     context = {}
 
-    def get (self,request,*args,**kwargs):
+    def get(self, request, *args, **kwargs):
         form = self.form_class(initial=self.initial)
         self.context['RegisterForm']= form
         return render(request,self.template_name,self.context)
-    def post (self,request,*args,**kwargs):
+
+    def post(self, request, *args, **kwargs):
         
         form = self.form_class(request.POST)
         if form.is_valid():
@@ -95,7 +78,6 @@ class RegisterView(View):
                         password=make_password(password)
                     )
                     user.save()
-                    # send_mail('Thanks for choosing us', 'Welcome to our company!', 'IT Unity Academy', ['ruslanovrahmet@gmail.com'], fail_silently=False)
                     return redirect('login')
             else:
                 messages.error(request, "Passwords are not similar")
@@ -103,38 +85,6 @@ class RegisterView(View):
         else:
             return redirect('register')
 
-
-# def register(request):
-#     if request.method == 'POST':
-#         name = request.POST["name"]
-#         surname = request.POST["surname"]
-#         username = request.POST["username"]
-#         email = request.POST["email"]
-#         password = request.POST["password"]
-#         password_check = request.POST["password_check"]
-
-#         if password == password_check:
-#             if User.objects.filter(username=username).exists():
-#                 messages.error(request, "This username is already exists!")
-#                 return redirect('register')
-#             elif User.objects.filter(email=email).exists():
-#                 messages.error(request, "This email is already exists!")
-#                 return redirect('register')
-#             else:
-#                 user = User.objects.create(
-#                     first_name=name,
-#                     last_name=surname,
-#                     username=username,
-#                     email=email,
-#                     password=make_password(password)
-#                 )
-#                 user.save()
-#                 send_mail('Thanks for choosing us', 'Welcome to our company!', 'IT Unity Academy', ['ruslanovrahmet@gmail.com'], fail_silently=False)
-#                 return redirect('login')
-#         else:
-#             messages.error(request, "Passwords are not similar")
-#             return redirect('register')
-#     return render(request, "sign_up.html")
 
 def logout(request):
     auth.logout(request)
